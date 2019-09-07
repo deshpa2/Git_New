@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@page import ="java.util.*">
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<%ArrayList al = request.getAttribute("rs")>
+	<form action ="gloss" method ="Post">
+		HELLO WORLD IN SERVELET<br/>
+		Enter id: <input type="text" name="id"> <br/>
+		
+	<input type ="submit" value ="Submit">
+	</form>
+	
+
+	<form action ="upload" method ="Post" enctype="multipart/form-data">
+		
+		<input type="file" name = "file">
+		<input type="Submit" value ="Upload">
+			
+	</form>
+	
+</body>
+</html>
